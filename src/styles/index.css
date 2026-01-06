@@ -19,6 +19,7 @@
   --footer-color: #f5f5f5;
   --blue-2: #223448;
   --ash: #7c7c7c;
+  color: rgb(0, 0, 0, 1);
 }
 * {
   text-decoration: none;
