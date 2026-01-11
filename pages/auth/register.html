@@ -3,13 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get started</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/frontend/dist/output.css" />
+    <link rel="stylesheet" href="/frontend/src/styles/register.css" />
   </head>
   <body class="m-0 p-0 border-box">
-    <main class="">
-      <section class="min-h-screen">
-        <div class="grid grid-cols-2 items-stretch">
-          <div class="w-full p-20">
+    <main>
+      <section>
+        <div class="grid grid-cols-2 items-stretch h-full">
+          <div class="register-input-frame w-full p-20">
             <h2 class="text-5xl font-medium capitalize pb-3">
               get started now
             </h2>
@@ -23,7 +24,7 @@
               >
                 <img
                   class="w-4 h-4"
-                  src="../images/devicon_google.png"
+                  src="/frontend/assets/images/devicon_google.png"
                   alt=""
                 />Log in with google</a
               >
@@ -32,7 +33,7 @@
                 class="w-[70%] h-11 bg-[#f5f5f5] font-medium rounded-lg flex items-center justify-center gap-3"
                 ><img
                   class="w-4 h-4"
-                  src="../images/Vector-(4).png"
+                  src="/frontend/assets/images/Vector-(4).png"
                   alt=""
                 />Log in with Apple</a
               >
@@ -95,29 +96,21 @@
             </form>
           </div>
           <div class="w-full">
-            <div class="w-full bg-[]">
-              <img
-                class="w-full h-full object-cover rounded-tl-xl rounded-bl-xl"
-                src="../images/3d-rendering-house-model-(1)-1.png"
-                alt=""
-              />
-            </div>
-            <h2 class="text-[#e9e0cf]">Roompal</h2>
-            <div>
-              <p class="text-[#e9e0cf]">
+            <div class="bg-side">
+              <h2>Roompal</h2>
+              <p>
                 We are a housing and roommate matching platform built to make
                 finding a place to live simple, safe, and reliable.
               </p>
+              <img
+                class="backdrop"
+                src="/frontend/assets/images/blur-blue.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- <main class="min-h-screen">
-      <div class="container mx-auto">
-     
-      </div>
-    </main> -->
   </body>
 </html>

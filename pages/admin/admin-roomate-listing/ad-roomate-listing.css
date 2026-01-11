@@ -1,14 +1,15 @@
 :root {
   --primary-color: rgba(34, 52, 72, 1);
   --secondary-color: #f44336;
+  --successful-color: rgba(29, 186, 23, 1);
+  --unmatched-color: rgba(237, 34, 34, 1);
   --background-color: #f4f4f4;
   --white-color: #ffffff;
   --gray: rgba(124, 124, 124, 1);
   --light-gray: rgba(0, 0, 0, 0.2);
   --text-color-dark: #000;
   --text-color: #333;
-  --header-height: 60px;
-  --footer-height: 40px;
+  --thead-bg-color: rgba(148, 180, 193, 0.54);
 }
 * {
   margin: 0;
@@ -97,4 +98,59 @@ nav ul li:nth-of-type(1) {
 #number {
   font-size: 2.2rem;
   font-weight: 500;
+}
+/* Table data styling */
+.table-wrapper {
+  width: 92%;
+  background: var(--white-color);
+  overflow-x: auto;
+  border-radius: 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+.table-wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table .table-header {
+  white-space: nowrap;
+  background: var(--thead-bg-color);
+  height: 76px;
+}
+table tbody td {
+  padding: 10px;
+}
+table thead th {
+  font-weight: 400;
+}
+th:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+th:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+th,
+td {
+  min-width: 200px;
+}
+.table-wrapper table td {
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  padding: 1rem;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+table tr td {
+  margin-top: 20px;
+}
+#successful {
+  background: var(--successful-color);
+  color: var(--white-color);
+  border-radius: 50px;
+  height: 44spx !important;
 }
