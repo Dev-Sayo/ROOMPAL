@@ -9,6 +9,14 @@
   <body class="m-0 p-0 border-box">
     <main>
       <section>
+        <!-- verify your email overlay -->
+        <div
+          id="verify-email"
+          class="verify-email-overlay w-163.5 h-124.75 bg-white border rounded-[14px] hidden"
+        >
+          <button class="okay-btn">okay</button>
+        </div>
+
         <div class="grid grid-cols-2 items-stretch h-full">
           <div class="register-input-frame w-full p-20">
             <h2 class="text-5xl font-medium capitalize pb-3">
@@ -38,44 +46,52 @@
                 />Log in with Apple</a
               >
             </div>
-            <form class="mt-10">
+            <form id="register-form" class="register-form mt-10">
               <div class="input-box w-full mb-5">
                 <label class="flex flex-col mb-3" for="name">Full Name</label>
                 <input
+                  id="name"
                   class="w-full h-11 bg-[#f1f1f1] pl-4.5 rounded-lg border border-transparent focus:border-[#223448] focus:outline-none"
                   type="text"
                   placeholder="write your name"
                 />
+                <div class="error" id="nameError"></div>
               </div>
               <div class="input-box w-full mb-5">
                 <label class="flex flex-col mb-3" for="email"
                   >Email Address</label
                 >
                 <input
+                  id="email"
                   class="w-full h-11 bg-[#f1f1f1] pl-4.5 rounded-lg border border-transparent focus:border-[#223448] focus:outline-none"
                   type="text"
                   placeholder="write your Email"
                 />
+                <div class="error" id="emailError"></div>
               </div>
               <div class="input-box w-full mb-5">
                 <label class="flex flex-col mb-3" for="password"
                   >Password</label
                 >
                 <input
+                  id="password"
                   class="w-full h-11 bg-[#f1f1f1] pl-4.5 rounded-lg border border-transparent focus:border-[#223448] focus:outline-none"
                   type="text"
                   placeholder="Enter password"
                 />
+                <div class="error" id="passwordError"></div>
               </div>
               <div class="input-box w-full">
                 <label class="flex flex-col mb-3" for="password"
                   >Confirm Password</label
                 >
                 <input
+                  id="confirmPassword"
                   class="w-full h-11 bg-[#f1f1f1] pl-4.5 rounded-lg border border-transparent focus:border-[#223448] focus:outline-none"
                   type="text"
                   placeholder="Enter password"
                 />
+                <div class="error" id="confirmPasswordError"></div>
               </div>
               <div class="mt-5 flex items-center gap-3 mb-5">
                 <input
@@ -87,7 +103,7 @@
               <div
                 class="bg-[#223448] text-[#e9e0cf] w-full rounded-full h-10 flex items-center justify-center cursor-pointer mb-4"
               >
-                <button class="w-full">Create Account</button>
+                <button class="w-full cursor-pointer">Create Account</button>
               </div>
               <span
                 >Already have an account?
@@ -112,5 +128,6 @@
         </div>
       </section>
     </main>
+    <script src="./auth-js/register.js"></script>
   </body>
 </html>
