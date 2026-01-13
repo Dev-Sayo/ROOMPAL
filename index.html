@@ -14,7 +14,7 @@
         <img src="" alt="" />
       </div>
       <nav
-        class="flex items-center justify-between gap-4 text-[#7c7c7c] md:flex"
+        class="hidden items-center justify-between gap-4 text-[#7c7c7c] md:flex"
       >
         <a href="./index.html">Home</a>
         <div class="relative">
@@ -54,7 +54,7 @@
         <div
           class="your-home flex items-center justify-between p-[3.2rem] w-full"
         >
-          <h2 class="">find your dream apartment here</h2>
+          <h2 class="capitalize">find your dream apartment here</h2>
           <p>
             Verified listings, real people, and safe connections. No stress. No
             scams.
@@ -63,15 +63,15 @@
         <div class="get-a-space-container">
           <img src="./assets/images/3d-rendering-house-model-1.png" alt="" />
           <div class="two-con">
-            <div class="fia-links">
+            <div class="fia-links w-[70%]">
               <a class="find-apartment" href="./pages/find-apartment.html"
                 >Find an Apartment</a
               >
               <a href="./pages/find-renter.html">List an Apartment</a>
               <a href="./pages/find-roomie.html">Find a Roomate</a>
             </div>
-            <div class="apartment-locations">
-              <div class="apartment-locations-frame"></div>
+            <div class="apartment-locations w-[90%]">
+              <!-- <div class="apartment-locations-frame"></div> -->
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
           class="grid m-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 w-[90%] p-10"
         >
           <div
-            class="w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
+            class="wwd-card-parent w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
           >
             <div class="w-full flex flex-col p-2.5">
               <p class="text-[#7c7c7c] uppercase text-[16px] pb-2">
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
+            class="wwd-card-parent-2 w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
           >
             <div class="w-full">
               <img
@@ -135,7 +135,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
+            class="wwd-card-parent w-full bg-[#f5f5f5] items-center flex flex-col p-6 rounded-[20px]"
           >
             <div class="w-full flex flex-col p-2.5">
               <p class="text-[#7c7c7c] uppercase text-[16px] pb-2">
@@ -152,9 +152,9 @@
                 >Get Started</a
               >
             </div>
-            <div class="">
+            <div>
               <img
-                class="rounded-[20px]"
+                class="reduce rounded-[20px]"
                 src="./assets/images/side-view-roommates-laying-bed-1.png"
                 alt=""
               />
@@ -285,7 +285,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 m-auto w-[90%]"
+          class="grid grid-cols-1 sm:grid-cols-2 max-[]::grid-cols-2 lg:grid-cols-3 gap-8 m-auto w-[90%]"
         >
           <div class="bg-[#e9e0cf] w-full rounded-[20px]">
             <div class="w-full p-5">
@@ -630,7 +630,7 @@
       </section>
       <!--subscribe to our newsletter  -->
       <section class="py-15 mb-10">
-        <div class="grid lg:grid-cols-2 w-full p-4 lg:p-10">
+        <div class="grid lg:grid-cols-2 gap-y-2 w-full p-4 lg:p-10">
           <div class="flex flex-col w-full">
             <h2
               class="lg:text-4xl text-black font-medium leading-[-1.5px] py-3"
@@ -681,119 +681,121 @@
         </div>
       </section>
       <!-- FAQ ACCORDION         -->
-      <section class="bg-black text-white p-20 mb-20">
-        <div class="flex justify-around flex-wrap m-auto w-full">
-          <div class="h-38.75 max-w-86.75">
-            <h2 class="text-[48px] font-bold">FAQS</h2>
-            <p class="max-w-77.75 text-[24px] leading-[120%] font-light pt-4">
-              Everything you want to know before finding your next home.
-            </p>
-          </div>
-          <div class="w-[50%]">
-            <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
-            <div class="w-full">
-              <button
-                class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
-              >
-                Are there financing options available?
-                <span class="faq-icon transition-transform duration-300"
-                  ><img
-                    class="object-cover w-[16.7px] h-2.25"
-                    src="./assets/images/chevron.png"
-                    alt=""
-                /></span>
-              </button>
-              <div
-                class="faq-answer max-h-0 transition-all duration-300 text-2xl overflow-hidden font-extralight"
-              >
-                Yes. Property tours are available for most listings. You can
-                schedule a physical or virtual tour directly through the
-                platform, depending on what the agent or landlord offers.
-              </div>
+      <section class="bg-black text-white mb-20">
+        <div class="p-10 sm:p-6 lg:p-16">
+          <div class="grid lg:grid-cols-2 m-auto w-full">
+            <div class="h-38.75 max-w-86.75 mb-15">
+              <h2 class="text-[48px] font-bold">FAQS</h2>
+              <p class="max-w-77.75 text-[24px] leading-[120%] font-light">
+                Everything you want to know before finding your next home.
+              </p>
             </div>
-            <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
-            <div w-full>
-              <button
-                class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
-              >
-                Are there financing options available?
-                <span class="faq-icon transition-transform duration-300"
-                  ><img
-                    class="w-[16.7px] h-2.25 object-cover"
-                    src="./assets/images/chevron.png"
-                    alt=""
-                /></span>
-              </button>
-              <div
-                class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
-              >
-                Listings are updated regularly to ensure availability and
-                accuracy. Unavailable or rented properties are removed promptly
-                to keep things reliable. or landlord offers.
+            <div class="faq__frame w-full max-[1024px]:mt-10">
+              <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
+              <div class="faq-que-ans w-full">
+                <button
+                  class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
+                >
+                  Are there financing options available?
+                  <span class="faq-icon transition-transform duration-300"
+                    ><img
+                      class="object-cover w-[16.7px] h-2.25"
+                      src="./assets/images/chevron.png"
+                      alt=""
+                  /></span>
+                </button>
+                <div
+                  class="faq-answer max-h-0 transition-all duration-300 text-2xl overflow-hidden font-extralight"
+                >
+                  Yes. Property tours are available for most listings. You can
+                  schedule a physical or virtual tour directly through the
+                  platform, depending on what the agent or landlord offers.
+                </div>
               </div>
-            </div>
-            <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
-            <div w-full>
-              <button
-                class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
-              >
-                Are your communities family-friendly?
-                <span class="faq-icon transition-transform duration-300"
-                  ><img
-                    class="object-cover w-[16.7px] h-2.25"
-                    src="./assets/images/chevron.png"
-                    alt=""
-                /></span>
-              </button>
-              <div
-                class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
-              >
-                any of our listings are located in safe, family-friendly
-                neighborhoods. You can use filters to find homes suitable for
-                families.
+              <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
+              <div class="faq-que-ans w-full">
+                <button
+                  class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
+                >
+                  Are there financing options available?
+                  <span class="faq-icon transition-transform duration-300"
+                    ><img
+                      class="w-[16.7px] h-2.25 object-cover"
+                      src="./assets/images/chevron.png"
+                      alt=""
+                  /></span>
+                </button>
+                <div
+                  class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
+                >
+                  Listings are updated regularly to ensure availability and
+                  accuracy. Unavailable or rented properties are removed
+                  promptly to keep things reliable. or landlord offers.
+                </div>
               </div>
-            </div>
-            <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
-            <div w-full>
-              <button
-                class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
-              >
-                What do I need to rent a property?
-                <span class="faq-icon transition-transform duration-300"
-                  ><img
-                    class="object-cover w-[16.7px] h-2.25"
-                    src="./assets/images/chevron.png"
-                    alt=""
-                /></span>
-              </button>
-              <div
-                class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
-              >
-                Requirements vary, but typically you’ll need a valid ID, rent
-                payment, caution or security deposit, and any additional
-                documents requested by the landlord.services in their new
-                location.
+              <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
+              <div class="faq-que-ans w-full">
+                <button
+                  class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
+                >
+                  Are your communities family-friendly?
+                  <span class="faq-icon transition-transform duration-300"
+                    ><img
+                      class="object-cover w-[16.7px] h-2.25"
+                      src="./assets/images/chevron.png"
+                      alt=""
+                  /></span>
+                </button>
+                <div
+                  class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
+                >
+                  any of our listings are located in safe, family-friendly
+                  neighborhoods. You can use filters to find homes suitable for
+                  families.
+                </div>
               </div>
-            </div>
-            <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
-            <div w-full>
-              <button
-                class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
-              >
-                Who do I contact for maintenance issues?
-                <span class="faq-icon transition-transform duration-300"
-                  ><img
-                    class="object-cover w-[16.7px] h-2.25"
-                    src="./assets/images/chevron.png"
-                    alt=""
-                /></span>
-              </button>
-              <div
-                class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
-              >
-                Maintenance requests should be directed to the listed agent or
-                landlord through the platform. Contact details are provided once
-                you’re connected to a property.
+              <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
+              <div class="faq-que-ans w-full">
+                <button
+                  class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
+                >
+                  What do I need to rent a property?
+                  <span class="faq-icon transition-transform duration-300"
+                    ><img
+                      class="object-cover w-[16.7px] h-2.25"
+                      src="./assets/images/chevron.png"
+                      alt=""
+                  /></span>
+                </button>
+                <div
+                  class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
+                >
+                  Requirements vary, but typically you’ll need a valid ID, rent
+                  payment, caution or security deposit, and any additional
+                  documents requested by the landlord.services in their new
+                  location.
+                </div>
+              </div>
+              <div class="border border-[#1E1D1D] h-0 w-full m-auto"></div>
+              <div class="faq-que-ans w-full">
+                <button
+                  class="w-full flex items-center justify-between text-2xl font-medium faq-question py-4 cursor-pointer"
+                >
+                  Who do I contact for maintenance issues?
+                  <span class="faq-icon transition-transform duration-300"
+                    ><img
+                      class="object-cover w-[16.7px] h-2.25"
+                      src="./assets/images/chevron.png"
+                      alt=""
+                  /></span>
+                </button>
+                <div
+                  class="faq-answer overflow-hidden max-h-0 transition-all duration-300 text-2xl font-extralight"
+                >
+                  Maintenance requests should be directed to the listed agent or
+                  landlord through the platform. Contact details are provided
+                  once you’re connected to a property.
+                </div>
               </div>
             </div>
           </div>
@@ -803,7 +805,8 @@
     <footer class="h-full">
       <div class="infinite">
         <img src="./assets/images/flame.png" alt="" />
-        <strong class="w-full flex text-[200px] md:text-[150px] sm:text-[64px]"
+        <strong
+          class="w-full flex text-[64px] sm:text-[100px] md:text-[150px] lg:text-[200px]"
           >ROOMPAL</strong
         >
         <p>
@@ -813,8 +816,8 @@
           journey as seamless and rewarding as possible.
         </p>
       </div>
-      <div class="flex justify-between w-[90%] mx-auto">
-        <div class="flex items-center gap-3">
+      <div class="footer-bottom w-[90%] mx-auto">
+        <div class="socials flex items-center gap-3">
           <a href="">
             <img class="w-6 h-6" src="./assets/images/Vector.png" alt=""
           /></a>

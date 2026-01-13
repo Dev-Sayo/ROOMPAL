@@ -53,6 +53,19 @@
   width: 100%;
   bottom: 0%;
 }
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  display: none;
+}
+.error-border {
+  border-color: #e74c3c !important;
+}
+
 /* @media (min-width: 1024px) {
   .bg-side h2 {
     font-size: 40px;
