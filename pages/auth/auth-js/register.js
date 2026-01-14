@@ -39,7 +39,7 @@ myForm.addEventListener("submit", (e) => {
   }
 
   //   password vlidation
-  if (!password.value.includes("#") || password.value.length != 8) {
+  if (!password.value.includes("#") || password.value.length >= 8) {
     errorMessage(password, "please enter at least 8 digits password with #");
   }
 

@@ -4,39 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roompal</title>
     <link rel="stylesheet" href="./home.css" />
-    <!-- <link rel="stylesheet" href="/frontend/dist/output.css" /> -->
+    <link rel="stylesheet" href="/frontend/dist/output.css" />
   </head>
-  <body class="">
-    <nav class="">
-      <div class="">
-        <a href="/frontend/index.html">roompal</a>
+  <body>
+    <nav class="nav">
+      <div class="nav-side__1">
+        <a class="home" href="/frontend/index.html">roompal</a>
+        <div class="link">
+          <a href="">Find an Apartment</a>
+          <a href="">Find a Roomate</a>
+          <a href="">List a House </a>
+          <a href="">Messages</a>
+        </div>
       </div>
-      <div class="">
-        <a href="">Find an Apartment</a>
-        <a href="">Find a Roomate</a>
-        <a href="">List a House </a>
-        <a href="">Messages</a>
-      </div>
-      <div class="">
-        <a href="">Need Help?</a>
+      <div class="side-two">
+        <span class="notification"
+          ><img src="/frontend/assets/images/notification-bell.png" alt=""
+        /></span>
+        <span><a class="need-help" href="">Need Help?</a></span>
       </div>
     </nav>
-    <aside></aside>
+    <aside>
+      <div class="location-div">
+        <p>Location</p>
+        <div></div>
+      </div>
+    </aside>
     <main>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ad sequi
-        necessitatibus praesentium aliquam quam reiciendis nam cupiditate
-        officiis porro, architecto pariatur eveniet quasi, debitis beatae
-        nostrum ratione mollitia! Eum delectus molestias necessitatibus aliquam
-        deserunt officiis autem dolores. Enim iure est rerum ab modi animi ea
-        vitae distinctio quas eveniet laudantium repellendus culpa illo et
-        quisquam, tempore nam tenetur fuga qui quae beatae vero id! Earum harum
-        impedit dignissimos quis natus illo tenetur in, doloribus facere, iure
-        molestiae delectus ullam suscipit doloremque architecto autem officiis,
-        ducimus reprehenderit fugiat nihil provident! Officia corporis dolorem
-        rem blanditiis eligendi ab quaerat aliquam sint?
-      </p>
+      <section class="w-full">
+        <div class="relative bg-[#e9e0c] overflow-hidden rounded-2xl p-8">
+          <div
+            class="absolute bg-cover w-1/3 bg-center bg-no-repeat"
+            style="
+              background-image: url('/frontend/assets/images/3d-model-house.png');
+            "
+          ></div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- <footer></footer> -->
   </body>
 </html>
